@@ -1,0 +1,196 @@
+pass start: 2026-11-08T18:07:35-05:00
+[18:08:36] audit written to results/data_audit.json
+[18:09:01] arm_t_kuairec: cutoffs t1=1598650255.5 t2=1598870571.5; train 10024644 val 1253080 test 1253082; test users 6638
+[18:09:01] coverage gate passed: arm_t_kuairec user 1.0000 (min 0.5), item 0.5572 (min 0.1)
+[18:09:37] arm_t_kuairec tune ItemKNN {'k': 50, 'shrink': 0.0} -> val NDCG 0.0016
+[18:09:37] wrote /home/jesunushno/b3-rec-v2/results/tables/tuning_arm_t_kuairec.csv (1 rows)
+[18:10:11] arm_t_kuairec tune ItemKNN {'k': 50, 'shrink': 50.0} -> val NDCG 0.0011
+[18:10:11] wrote /home/jesunushno/b3-rec-v2/results/tables/tuning_arm_t_kuairec.csv (2 rows)
+[18:11:11] arm_t_kuairec tune ItemKNN {'k': 100, 'shrink': 0.0} -> val NDCG 0.0015
+[18:11:11] wrote /home/jesunushno/b3-rec-v2/results/tables/tuning_arm_t_kuairec.csv (3 rows)
+[18:12:07] arm_t_kuairec tune ItemKNN {'k': 100, 'shrink': 50.0} -> val NDCG 0.0010
+[18:12:07] wrote /home/jesunushno/b3-rec-v2/results/tables/tuning_arm_t_kuairec.csv (4 rows)
+[18:12:26] arm_t_kuairec tune EASE {'lam': 10.0} -> val NDCG 0.0033
+[18:12:26] wrote /home/jesunushno/b3-rec-v2/results/tables/tuning_arm_t_kuairec.csv (5 rows)
+[18:12:46] arm_t_kuairec tune EASE {'lam': 50.0} -> val NDCG 0.0029
+[18:12:46] wrote /home/jesunushno/b3-rec-v2/results/tables/tuning_arm_t_kuairec.csv (6 rows)
+[18:13:05] arm_t_kuairec tune EASE {'lam': 100.0} -> val NDCG 0.0027
+[18:13:05] wrote /home/jesunushno/b3-rec-v2/results/tables/tuning_arm_t_kuairec.csv (7 rows)
+[18:13:24] arm_t_kuairec tune EASE {'lam': 250.0} -> val NDCG 0.0024
+[18:13:24] wrote /home/jesunushno/b3-rec-v2/results/tables/tuning_arm_t_kuairec.csv (8 rows)
+[18:13:43] arm_t_kuairec tune EASE {'lam': 500.0} -> val NDCG 0.0022
+[18:13:43] wrote /home/jesunushno/b3-rec-v2/results/tables/tuning_arm_t_kuairec.csv (9 rows)
+[18:13:50] arm_t_kuairec tune iALS {'factors': 32, 'reg': 0.1, 'alpha': 10.0, 'iterations': 10} -> val NDCG 0.0048
+[18:13:50] wrote /home/jesunushno/b3-rec-v2/results/tables/tuning_arm_t_kuairec.csv (10 rows)
+[18:13:57] arm_t_kuairec tune iALS {'factors': 32, 'reg': 1.0, 'alpha': 10.0, 'iterations': 10} -> val NDCG 0.0047
+[18:13:57] wrote /home/jesunushno/b3-rec-v2/results/tables/tuning_arm_t_kuairec.csv (11 rows)
+[18:14:10] arm_t_kuairec tune iALS {'factors': 64, 'reg': 0.1, 'alpha': 10.0, 'iterations': 10} -> val NDCG 0.0045
+[18:14:10] wrote /home/jesunushno/b3-rec-v2/results/tables/tuning_arm_t_kuairec.csv (12 rows)
+[18:14:22] arm_t_kuairec tune iALS {'factors': 64, 'reg': 1.0, 'alpha': 10.0, 'iterations': 10} -> val NDCG 0.0046
+[18:14:22] wrote /home/jesunushno/b3-rec-v2/results/tables/tuning_arm_t_kuairec.csv (13 rows)
+[18:14:56] arm_t_kuairec tune iALS {'factors': 128, 'reg': 0.1, 'alpha': 10.0, 'iterations': 10} -> val NDCG 0.0040
+[18:14:56] wrote /home/jesunushno/b3-rec-v2/results/tables/tuning_arm_t_kuairec.csv (14 rows)
+[18:15:29] arm_t_kuairec tune iALS {'factors': 128, 'reg': 1.0, 'alpha': 10.0, 'iterations': 10} -> val NDCG 0.0040
+[18:15:29] wrote /home/jesunushno/b3-rec-v2/results/tables/tuning_arm_t_kuairec.csv (15 rows)
+[18:15:41] arm_t_kuairec tune iALS {'factors': 64, 'reg': 0.1, 'alpha': 1.0, 'iterations': 10} -> val NDCG 0.0034
+[18:15:41] wrote /home/jesunushno/b3-rec-v2/results/tables/tuning_arm_t_kuairec.csv (16 rows)
+[18:15:53] arm_t_kuairec tune iALS {'factors': 64, 'reg': 0.1, 'alpha': 40.0, 'iterations': 10} -> val NDCG 0.0045
+[18:15:53] wrote /home/jesunushno/b3-rec-v2/results/tables/tuning_arm_t_kuairec.csv (17 rows)
+[18:15:53] wrote /home/jesunushno/b3-rec-v2/results/tables/tuning_arm_t_kuairec.csv (17 rows)
+[18:16:04] arm_t_kuairec sampled done: Random
+[18:16:11] arm_t_kuairec sampled done: Popularity
+[18:16:50] arm_t_kuairec sampled done: ItemKNN
+[18:17:16] arm_t_kuairec sampled done: EASE
+[18:18:11] arm_t_kuairec sampled done: iALS
+[18:18:12] wrote /home/jesunushno/b3-rec-v2/results/tables/arm_metrics.csv (5 rows)
+[18:18:13] wrote /home/jesunushno/b3-rec-v2/results/tables/pairwise.csv (6 rows)
+[18:18:13] wrote /home/jesunushno/b3-rec-v2/results/tables/timings.csv (7 rows)
+[18:18:13] wrote /home/jesunushno/b3-rec-v2/results/tables/sampled_metrics.csv (50 rows)
+[18:18:13] wrote /home/jesunushno/b3-rec-v2/results/tables/popularity_report.csv (6 rows)
+[18:18:13] wrote /home/jesunushno/b3-rec-v2/results/tables/cold_start.csv (10 rows)
+[18:18:40] leakage check: clean ok=True, planted flagged=True
+[18:18:41] arm_t_ml1m: cutoffs t1=975768738.0 t2=978133376.4; train 800164 val 100024 test 100021; test users 1188
+[18:18:41] coverage gate passed: arm_t_ml1m user 0.8359 (min 0.5), item 0.9937 (min 0.1)
+[18:18:43] arm_t_ml1m tune ItemKNN {'k': 50, 'shrink': 0.0} -> val NDCG 0.0510
+[18:18:43] wrote /home/jesunushno/b3-rec-v2/results/tables/tuning_arm_t_ml1m.csv (1 rows)
+[18:18:45] arm_t_ml1m tune ItemKNN {'k': 50, 'shrink': 50.0} -> val NDCG 0.0528
+[18:18:45] wrote /home/jesunushno/b3-rec-v2/results/tables/tuning_arm_t_ml1m.csv (2 rows)
+[18:18:47] arm_t_ml1m tune ItemKNN {'k': 100, 'shrink': 0.0} -> val NDCG 0.0537
+[18:18:47] wrote /home/jesunushno/b3-rec-v2/results/tables/tuning_arm_t_ml1m.csv (3 rows)
+[18:18:49] arm_t_ml1m tune ItemKNN {'k': 100, 'shrink': 50.0} -> val NDCG 0.0529
+[18:18:49] wrote /home/jesunushno/b3-rec-v2/results/tables/tuning_arm_t_ml1m.csv (4 rows)
+[18:18:52] arm_t_ml1m tune EASE {'lam': 10.0} -> val NDCG 0.0394
+[18:18:52] wrote /home/jesunushno/b3-rec-v2/results/tables/tuning_arm_t_ml1m.csv (5 rows)
+[18:18:55] arm_t_ml1m tune EASE {'lam': 50.0} -> val NDCG 0.0427
+[18:18:55] wrote /home/jesunushno/b3-rec-v2/results/tables/tuning_arm_t_ml1m.csv (6 rows)
+[18:18:58] arm_t_ml1m tune EASE {'lam': 100.0} -> val NDCG 0.0452
+[18:18:58] wrote /home/jesunushno/b3-rec-v2/results/tables/tuning_arm_t_ml1m.csv (7 rows)
+[18:19:01] arm_t_ml1m tune EASE {'lam': 250.0} -> val NDCG 0.0454
+[18:19:01] wrote /home/jesunushno/b3-rec-v2/results/tables/tuning_arm_t_ml1m.csv (8 rows)
+[18:19:04] arm_t_ml1m tune EASE {'lam': 500.0} -> val NDCG 0.0474
+[18:19:04] wrote /home/jesunushno/b3-rec-v2/results/tables/tuning_arm_t_ml1m.csv (9 rows)
+[18:19:07] arm_t_ml1m tune iALS {'factors': 32, 'reg': 0.1, 'alpha': 10.0, 'iterations': 10} -> val NDCG 0.0406
+[18:19:07] wrote /home/jesunushno/b3-rec-v2/results/tables/tuning_arm_t_ml1m.csv (10 rows)
+[18:19:11] arm_t_ml1m tune iALS {'factors': 32, 'reg': 1.0, 'alpha': 10.0, 'iterations': 10} -> val NDCG 0.0399
+[18:19:11] wrote /home/jesunushno/b3-rec-v2/results/tables/tuning_arm_t_ml1m.csv (11 rows)
+[18:19:17] arm_t_ml1m tune iALS {'factors': 64, 'reg': 0.1, 'alpha': 10.0, 'iterations': 10} -> val NDCG 0.0388
+[18:19:17] wrote /home/jesunushno/b3-rec-v2/results/tables/tuning_arm_t_ml1m.csv (12 rows)
+[18:19:24] arm_t_ml1m tune iALS {'factors': 64, 'reg': 1.0, 'alpha': 10.0, 'iterations': 10} -> val NDCG 0.0384
+[18:19:24] wrote /home/jesunushno/b3-rec-v2/results/tables/tuning_arm_t_ml1m.csv (13 rows)
+[18:19:42] arm_t_ml1m tune iALS {'factors': 128, 'reg': 0.1, 'alpha': 10.0, 'iterations': 10} -> val NDCG 0.0384
+[18:19:42] wrote /home/jesunushno/b3-rec-v2/results/tables/tuning_arm_t_ml1m.csv (14 rows)
+[18:20:00] arm_t_ml1m tune iALS {'factors': 128, 'reg': 1.0, 'alpha': 10.0, 'iterations': 10} -> val NDCG 0.0389
+[18:20:00] wrote /home/jesunushno/b3-rec-v2/results/tables/tuning_arm_t_ml1m.csv (15 rows)
+[18:20:06] arm_t_ml1m tune iALS {'factors': 64, 'reg': 0.1, 'alpha': 1.0, 'iterations': 10} -> val NDCG 0.0410
+[18:20:06] wrote /home/jesunushno/b3-rec-v2/results/tables/tuning_arm_t_ml1m.csv (16 rows)
+[18:20:13] arm_t_ml1m tune iALS {'factors': 64, 'reg': 0.1, 'alpha': 40.0, 'iterations': 10} -> val NDCG 0.0316
+[18:20:13] wrote /home/jesunushno/b3-rec-v2/results/tables/tuning_arm_t_ml1m.csv (17 rows)
+[18:20:13] wrote /home/jesunushno/b3-rec-v2/results/tables/tuning_arm_t_ml1m.csv (17 rows)
+[18:20:14] arm_t_ml1m sampled done: Random
+[18:20:15] arm_t_ml1m sampled done: Popularity
+[18:20:19] arm_t_ml1m sampled done: ItemKNN
+[18:20:23] arm_t_ml1m sampled done: EASE
+[18:21:12] arm_t_ml1m sampled done: iALS
+[18:21:12] wrote /home/jesunushno/b3-rec-v2/results/tables/arm_metrics.csv (10 rows)
+[18:21:13] wrote /home/jesunushno/b3-rec-v2/results/tables/pairwise.csv (12 rows)
+[18:21:13] wrote /home/jesunushno/b3-rec-v2/results/tables/timings.csv (14 rows)
+[18:21:13] wrote /home/jesunushno/b3-rec-v2/results/tables/sampled_metrics.csv (100 rows)
+[18:21:13] wrote /home/jesunushno/b3-rec-v2/results/tables/popularity_report.csv (12 rows)
+[18:21:13] wrote /home/jesunushno/b3-rec-v2/results/tables/cold_start.csv (20 rows)
+[18:21:16] arm_f: cutoffs t1=1597388594.0 t2=1597977252.7; train 3595662 val 449458 test 449458; scored users 1381
+[18:21:16] coverage gate passed: arm_f user 1.0000 (min 0.95), item 0.6631 (min 0.1)
+/home/jesunushno/b3-rec-v2/experiments/run_all.py:831: RuntimeWarning: Mean of empty slice
+  per_user[name] = {k: np.nanmean(np.vstack([a[k] for a in acc]), axis=0) for k in acc[0]}
+[18:21:17] arm_f Random: truth NDCG@10 = 0.0065
+[18:21:17] arm_f Popularity: truth NDCG@10 = 0.0000
+[18:21:19] arm_f ItemKNN: nonzero-row fraction over scored users 1.0000
+[18:21:19] arm_f ItemKNN: truth NDCG@10 = 0.0008
+[18:21:21] arm_f EASE: nonzero-row fraction over scored users 1.0000
+[18:21:21] arm_f EASE: truth NDCG@10 = 0.0112
+/home/jesunushno/b3-rec-v2/experiments/run_all.py:818: RuntimeWarning: Mean of empty slice
+  per_user[name] = {k: np.nanmean(np.vstack([a[k] for a in acc]), axis=0) for k in acc[0]}
+[18:21:32] arm_f iALS: nonzero-row fraction over scored users 1.0000
+[18:21:32] arm_f iALS: truth NDCG@10 = 0.0135
+[18:21:32] wrote /home/jesunushno/b3-rec-v2/results/tables/arm_metrics.csv (15 rows)
+[18:21:32] wrote /home/jesunushno/b3-rec-v2/results/tables/pairwise.csv (18 rows)
+[18:21:32] wrote /home/jesunushno/b3-rec-v2/results/tables/timings.csv (18 rows)
+[18:21:33] arm_f sampled done: Random
+[18:21:34] arm_f sampled done: Popularity
+[18:21:35] arm_f sampled done: ItemKNN
+[18:21:36] arm_f sampled done: EASE
+[18:21:37] arm_f sampled done: iALS
+[18:21:37] wrote /home/jesunushno/b3-rec-v2/results/tables/sampled_metrics.csv (150 rows)
+[18:21:37] wrote /home/jesunushno/b3-rec-v2/results/tables/popularity_report.csv (18 rows)
+[18:21:41] wrote /home/jesunushno/b3-rec-v2/results/tables/arm_f_label_sensitivity.csv (5 rows)
+[18:21:41] coverage gate passed: arm_f_sensitivity_pool user 1.0000 (min 0.5), item 0.2453 (min 0.1)
+[18:21:41] arm_f sensitivity pool Random: NDCG 0.0071
+[18:21:41] arm_f sensitivity pool Popularity: NDCG 0.0000
+[18:21:43] arm_f sensitivity pool ItemKNN: NDCG 0.0002
+[18:21:44] arm_f sensitivity pool EASE: NDCG 0.0001
+[18:21:46] arm_f sensitivity pool iALS: NDCG 0.0000
+[18:21:46] wrote /home/jesunushno/b3-rec-v2/results/tables/arm_f_pool_sensitivity.csv (5 rows)
+/home/jesunushno/b3-rec-v2/experiments/run_all.py:932: RuntimeWarning: Mean of empty slice
+  truth = np.nanmean(metrics.exact_per_user(scores[name], rel_s)["ndcg"])
+/home/jesunushno/b3-rec-v2/experiments/run_all.py:937: RuntimeWarning: Mean of empty slice
+  sampled.append(float(np.nanmean(out["ndcg"])))
+[18:21:46] slice head_top1pct done
+[18:21:47] slice torso_next9pct done
+[18:21:51] slice tail_rest done
+[18:21:51] wrote /home/jesunushno/b3-rec-v2/results/tables/popularity_slices.csv (15 rows)
+[18:22:12] exposure arm gamma=0.0 done (c=0.1630)
+[18:22:13] exposure arm gamma=0.5 done (c=0.2006)
+[18:22:13] exposure arm gamma=1.0 done (c=0.2128)
+[18:22:13] wrote /home/jesunushno/b3-rec-v2/results/tables/exposure_estimates.csv (300 rows)
+[18:22:13] wrote /home/jesunushno/b3-rec-v2/results/tables/exposure_tau.csv (60 rows)
+[18:22:23] coverage gate passed: random_kuairec_big_seed0 user 1.0000 (min 0.5), item 0.9948 (min 0.1)
+[18:24:29] random arm kuairec_big seed 0 done
+[18:24:29] wrote /home/jesunushno/b3-rec-v2/results/tables/random_split.csv (5 rows)
+[18:24:39] coverage gate passed: random_kuairec_big_seed1 user 1.0000 (min 0.5), item 0.9967 (min 0.1)
+[18:26:44] random arm kuairec_big seed 1 done
+[18:26:44] wrote /home/jesunushno/b3-rec-v2/results/tables/random_split.csv (10 rows)
+[18:26:54] coverage gate passed: random_kuairec_big_seed2 user 1.0000 (min 0.5), item 0.9953 (min 0.1)
+[18:28:58] random arm kuairec_big seed 2 done
+[18:28:58] wrote /home/jesunushno/b3-rec-v2/results/tables/random_split.csv (15 rows)
+[18:29:08] coverage gate passed: random_kuairec_big_seed3 user 1.0000 (min 0.5), item 0.9947 (min 0.1)
+[18:31:12] random arm kuairec_big seed 3 done
+[18:31:12] wrote /home/jesunushno/b3-rec-v2/results/tables/random_split.csv (20 rows)
+[18:31:22] coverage gate passed: random_kuairec_big_seed4 user 1.0000 (min 0.5), item 0.9947 (min 0.1)
+[18:33:27] random arm kuairec_big seed 4 done
+[18:33:27] wrote /home/jesunushno/b3-rec-v2/results/tables/random_split.csv (25 rows)
+[18:33:28] coverage gate passed: random_ml1m_seed0 user 1.0000 (min 0.5), item 0.9983 (min 0.1)
+[18:34:27] random arm ml1m seed 0 done
+[18:34:27] wrote /home/jesunushno/b3-rec-v2/results/tables/random_split.csv (30 rows)
+[18:34:27] coverage gate passed: random_ml1m_seed1 user 1.0000 (min 0.5), item 0.9993 (min 0.1)
+[18:35:27] random arm ml1m seed 1 done
+[18:35:27] wrote /home/jesunushno/b3-rec-v2/results/tables/random_split.csv (35 rows)
+[18:35:27] coverage gate passed: random_ml1m_seed2 user 1.0000 (min 0.5), item 0.9990 (min 0.1)
+[18:36:26] random arm ml1m seed 2 done
+[18:36:26] wrote /home/jesunushno/b3-rec-v2/results/tables/random_split.csv (40 rows)
+[18:36:27] coverage gate passed: random_ml1m_seed3 user 1.0000 (min 0.5), item 0.9969 (min 0.1)
+[18:37:27] random arm ml1m seed 3 done
+[18:37:27] wrote /home/jesunushno/b3-rec-v2/results/tables/random_split.csv (45 rows)
+[18:37:27] coverage gate passed: random_ml1m_seed4 user 1.0000 (min 0.5), item 0.9973 (min 0.1)
+[18:38:26] random arm ml1m seed 4 done
+[18:38:26] wrote /home/jesunushno/b3-rec-v2/results/tables/random_split.csv (50 rows)
+[18:38:26] wrote /home/jesunushno/b3-rec-v2/results/tables/random_split.csv (50 rows)
+[18:38:26] verdicts written
+{
+  "H1": "REFUTED",
+  "H1a": "CONFIRMED",
+  "H1b": "CONFIRMED",
+  "H2a": "REFUTED",
+  "H2b": "CONFIRMED",
+  "H2_replication_arm_t_kuairec": null,
+  "H2_replication_arm_t_ml1m": null,
+  "H3a": "CONFIRMED",
+  "H3b": "CONFIRMED",
+  "H4a": "REFUTED",
+  "H4b": "REFUTED",
+  "S1": "CONFIRMED",
+  "H5": "CONFIRMED",
+  "H6": "CONFIRMED",
+  "H7": "CONFIRMED",
+  "replication_gate": "REPRODUCED",
+  "track": "GO"
+}
+pass end: 2026-11-08T18:38:26-05:00 exit=0

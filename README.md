@@ -10,10 +10,20 @@ standard corrections remove? And, new in this pass: does the answer
 survive an evaluation arm that is first checked to be measuring
 anything at all?
 
-**Headline.** Pending the run of record. This repository is the
-corrected second pass of
+**Headline.** v1's temporal results replicate almost exactly (all five
+standing verdicts, headline statistics within 3.38e-07), and the
+rebuilt full-matrix arm tells a different story than v1's void numbers
+did. On the corrected arm (coverage gate passed: user coverage 1.0000,
+item coverage 0.6631), exact NDCG@10 over 1,381 users orders iALS
+(0.01353) above EASE (0.01120) above Random (0.00654) above ItemKNN
+(0.00079) above Popularity (0.00000). Sampled metrics put Random first;
+the bias correction restores the true ordering and cuts the error from
+0.0943 to 0.0262 (H2b CONFIRMED). The off-policy estimators that
+appeared to win on v1's void arm do not beat the naive estimator on
+the real one (H4a, H4b REFUTED). Full evidence: RESULTS.md. This
+repository is the corrected second pass of
 [recommender-evaluation-lab](https://github.com/JesunAhmadUshno/recommender-evaluation-lab)
-(v1). In v1, the fully observed arm trained its rankers on a pool
+(v1): in v1, the fully observed arm trained its rankers on a pool
 that contained zero events by the users being scored, so three of its
 five rankers were scored on empty histories and seven of its thirteen
 verdicts are void. v2 rebuilds that arm inside the fully observed
@@ -25,10 +35,29 @@ content commit of this repo) before any metric is computed.
 **Field.** ML and AI research. **Job family.** ML evaluation and
 experimentation.
 
-**Verdict.** Functional (pre-run). The pre-registration is locked,
-the pipeline and tests are in place, and the run of record has not
-yet been executed. The verdict line is updated with the results
-commit, and is never written ahead of the evidence.
+**Verdict.** Evaluated. The run of record completed on BlackBoxV3 on
+2026-11-08 under the locked pre-registration: 14 of 14 hypotheses
+decided by the harness from the measured tables, the coverage gate
+passed on every arm, and v1's five standing verdicts replicated.
+Grade: 8,800 of 10,000 (AUDIT.md, deductions itemized).
+
+## Verdicts at a glance
+
+| Hypothesis | Verdict |
+| --- | --- |
+| H1: the popularity baseline beats Random temporally | REFUTED |
+| H1a: ItemKNN beats Popularity per user (Arm T) | CONFIRMED |
+| H1b: EASE beats ItemKNN per user (Arm T) | CONFIRMED |
+| H2a: sampled metrics fully reverse the Arm F ordering | REFUTED |
+| H2b: the correction repairs sampled metrics on Arm F | CONFIRMED |
+| H3a: random splits inflate NDCG | CONFIRMED |
+| H3b: the leakage audit catches a planted leak | CONFIRMED |
+| H4a: IPS and SNIPS beat the naive estimator | REFUTED |
+| H4b: clipped IPS beats the naive estimator | REFUTED |
+| S1: sampled-metric bias is ranker-dependent | CONFIRMED |
+| H5: sampled metrics reverse conclusions inside popularity slices | CONFIRMED |
+| H6: recommendations concentrate on high-exposure items | CONFIRMED |
+| H7: the ItemKNN edge is carried by warm items | CONFIRMED |
 
 ## Why v2 exists
 
@@ -70,10 +99,10 @@ to everyone downstream.
 - Proposal: DONE 2026-11-08 (PREREGISTRATION.md, commit 7a12bb6)
 - Baseline: DONE 2026-11-08 (v1's record, at commit a9c0464)
 - Build: DONE 2026-11-08
-- Evaluate: OPEN (run of record on BlackBoxV3)
-- Report: OPEN
-- Review: OPEN
-- Release: OPEN
+- Evaluate: DONE 2026-11-08 (run of record on BlackBoxV3, exit 0)
+- Report: DONE 2026-11-08 (RESULTS.md)
+- Review: DONE 2026-11-08 (AUDIT.md; Jev claim_check REVIEW, hand-verified)
+- Release: DONE 2026-11-08 (results commit)
 
 ## Layout
 
@@ -100,9 +129,9 @@ python -m pytest tests -q
 python scripts/reproduce_headline.py --check
 ```
 
-The full study (CPU only, about an hour on the machine of record):
-fetch the two datasets per data/README.md (checksums there and in
-PREREGISTRATION.md), then run, inside a git clone:
+The full study (CPU only, 31 minutes on the machine of record for the
+run of record): fetch the two datasets per data/README.md (checksums
+there and in PREREGISTRATION.md), then run, inside a git clone:
 
 ```text
 bash experiments/run_all.sh

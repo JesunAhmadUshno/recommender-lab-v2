@@ -1,0 +1,19 @@
+{
+  "clean": {
+    "test_pairs": 87887,
+    "pair_overlap": 0,
+    "pair_overlap_ok": true,
+    "max_train_ts": 1598650255.432,
+    "min_test_ts": 1598870572.347,
+    "time_order_ok": true
+  },
+  "planted": {
+    "test_pairs": 87887,
+    "pair_overlap": 2,
+    "pair_overlap_ok": false,
+    "max_train_ts": 1598878253.377,
+    "min_test_ts": 1598870572.347,
+    "time_order_ok": false
+  },
+  "audit_flags_planted": true
+}

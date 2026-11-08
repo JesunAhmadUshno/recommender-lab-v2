@@ -1,0 +1,16 @@
+slice,ranker,truth_ndcg,sampled_ndcg_mean,n_users
+head_top1pct,Random,nan,nan,0
+head_top1pct,Popularity,nan,nan,0
+head_top1pct,ItemKNN,nan,nan,0
+head_top1pct,EASE,nan,nan,0
+head_top1pct,iALS,nan,nan,0
+torso_next9pct,Random,0.0,0.01951663473978989,11
+torso_next9pct,Popularity,0.0,0.30541457798287536,11
+torso_next9pct,ItemKNN,0.09090909090909091,0.16092984042654518,11
+torso_next9pct,EASE,0.0,0.1740732330046259,11
+torso_next9pct,iALS,0.0,0.19847272361823684,11
+tail_rest,Random,0.007329516578551274,0.14658917294885415,1381
+tail_rest,Popularity,0.0,0.000133845003101176,1381
+tail_rest,ItemKNN,0.0006275978858289064,0.13467638148961925,1381
+tail_rest,EASE,0.011195589023901038,0.09644825644423236,1381
+tail_rest,iALS,0.013331012217666045,0.12453133367390837,1381

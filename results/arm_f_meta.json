@@ -1,0 +1,9 @@
+{
+  "construction": "temporal split inside the small matrix (Arm T protocol)",
+  "t1": 1597388593.9598,
+  "t2": 1597977252.7438002,
+  "train_events": 3595662,
+  "pool_positive_cells": 165407,
+  "scored_users": 1381,
+  "truth_positives": 24572
+}

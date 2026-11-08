@@ -1,0 +1,18 @@
+arm,ranker,config,val_ndcg,fit_seconds
+arm_t_kuairec,ItemKNN,"{""k"": 50, ""shrink"": 0.0}",0.0015623617692151952,35.51289736805484
+arm_t_kuairec,ItemKNN,"{""k"": 50, ""shrink"": 50.0}",0.0011080954203032353,33.54642371204682
+arm_t_kuairec,ItemKNN,"{""k"": 100, ""shrink"": 0.0}",0.001533457557190541,60.52495945710689
+arm_t_kuairec,ItemKNN,"{""k"": 100, ""shrink"": 50.0}",0.0009918536074596128,56.164803778985515
+arm_t_kuairec,EASE,"{""lam"": 10.0}",0.0033143849791478024,19.23299403791316
+arm_t_kuairec,EASE,"{""lam"": 50.0}",0.002900094329951324,19.45151554699987
+arm_t_kuairec,EASE,"{""lam"": 100.0}",0.0027124454300545614,19.069064592011273
+arm_t_kuairec,EASE,"{""lam"": 250.0}",0.002421889774030941,19.150690475013107
+arm_t_kuairec,EASE,"{""lam"": 500.0}",0.0021537540336473908,19.04030691110529
+arm_t_kuairec,iALS,"{""factors"": 32, ""reg"": 0.1, ""alpha"": 10.0, ""iterations"": 10}",0.004758185099487964,7.102673020213842
+arm_t_kuairec,iALS,"{""factors"": 32, ""reg"": 1.0, ""alpha"": 10.0, ""iterations"": 10}",0.004742819202212505,7.0561075389850885
+arm_t_kuairec,iALS,"{""factors"": 64, ""reg"": 0.1, ""alpha"": 10.0, ""iterations"": 10}",0.0045113073575284495,12.337061608908698
+arm_t_kuairec,iALS,"{""factors"": 64, ""reg"": 1.0, ""alpha"": 10.0, ""iterations"": 10}",0.004567123797124726,12.256683622021228
+arm_t_kuairec,iALS,"{""factors"": 128, ""reg"": 0.1, ""alpha"": 10.0, ""iterations"": 10}",0.003987424650666041,33.77694457909092
+arm_t_kuairec,iALS,"{""factors"": 128, ""reg"": 1.0, ""alpha"": 10.0, ""iterations"": 10}",0.004022948237868234,33.15972036286257
+arm_t_kuairec,iALS,"{""factors"": 64, ""reg"": 0.1, ""alpha"": 1.0, ""iterations"": 10}",0.0034477654705763975,12.151863354956731
+arm_t_kuairec,iALS,"{""factors"": 64, ""reg"": 0.1, ""alpha"": 40.0, ""iterations"": 10}",0.004539893350256949,12.34269897104241

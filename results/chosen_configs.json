@@ -1,0 +1,36 @@
+{
+  "arm_t_kuairec": {
+    "Random": {},
+    "Popularity": {},
+    "ItemKNN": {
+      "k": 50,
+      "shrink": 0.0
+    },
+    "EASE": {
+      "lam": 10.0
+    },
+    "iALS": {
+      "factors": 32,
+      "reg": 0.1,
+      "alpha": 10.0,
+      "iterations": 10
+    }
+  },
+  "arm_t_ml1m": {
+    "Random": {},
+    "Popularity": {},
+    "ItemKNN": {
+      "k": 100,
+      "shrink": 0.0
+    },
+    "EASE": {
+      "lam": 500.0
+    },
+    "iALS": {
+      "factors": 64,
+      "reg": 0.1,
+      "alpha": 1.0,
+      "iterations": 10
+    }
+  }
+}

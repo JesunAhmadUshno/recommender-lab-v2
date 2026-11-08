@@ -1,0 +1,702 @@
+{
+  "H1": {
+    "verdict": "REFUTED",
+    "evidence": {
+      "arm_t_kuairec": {
+        "popularity": 7.293651551055531e-05,
+        "random": 0.0014251260639763885
+      },
+      "arm_f": {
+        "popularity": 0.0,
+        "random": 0.006544362407086853
+      }
+    }
+  },
+  "H1a": {
+    "verdict": "CONFIRMED",
+    "evidence": {
+      "itemknn_minus_popularity_mean": 0.000870328500435013,
+      "one_sided_95_lower_bound": 0.0006181796710208776,
+      "p_holm": 0.0,
+      "n_users": 6638
+    }
+  },
+  "H1b": {
+    "verdict": "CONFIRMED",
+    "evidence": {
+      "ease_minus_itemknn_mean": 0.0005000260386140877,
+      "one_sided_95_lower_bound": 0.00013933760133615756,
+      "p_holm": 0.021,
+      "n_users": 6638
+    }
+  },
+  "H2a": {
+    "verdict": "REFUTED",
+    "evidence": {
+      "exact": {
+        "Random": 0.006544362407086853,
+        "Popularity": 0.0,
+        "ItemKNN": 0.0007869691865516291,
+        "EASE": 0.011195589023901038,
+        "iALS": 0.01352522816157373
+      },
+      "sampled_mean": {
+        "Random": 0.14649590915482774,
+        "Popularity": 0.0006862201655580854,
+        "ItemKNN": 0.13490147579860073,
+        "EASE": 0.09666302770304885,
+        "iALS": 0.12478656625995274
+      },
+      "corrected_mean": {
+        "Random": 0.031094273253519922,
+        "Popularity": 1.593713007227228e-05,
+        "ItemKNN": 0.027698649520918328,
+        "EASE": 0.04307372049640179,
+        "iALS": 0.06140333272265924
+      },
+      "mean_abs_err_sampled": 0.09429621006057497,
+      "mean_abs_err_corrected": 0.026246752868891665,
+      "order_sampled": [
+        "Random",
+        "ItemKNN",
+        "iALS",
+        "EASE",
+        "Popularity"
+      ],
+      "order_exact": [
+        "iALS",
+        "EASE",
+        "Random",
+        "ItemKNN",
+        "Popularity"
+      ],
+      "pair_flips_sampled": {
+        "Random|Popularity": [
+          0,
+          10
+        ],
+        "Random|ItemKNN": [
+          0,
+          10
+        ],
+        "Random|EASE": [
+          10,
+          10
+        ],
+        "Random|iALS": [
+          10,
+          10
+        ],
+        "Popularity|ItemKNN": [
+          0,
+          10
+        ],
+        "Popularity|EASE": [
+          0,
+          10
+        ],
+        "Popularity|iALS": [
+          0,
+          10
+        ],
+        "ItemKNN|EASE": [
+          10,
+          10
+        ],
+        "ItemKNN|iALS": [
+          10,
+          10
+        ],
+        "EASE|iALS": [
+          0,
+          10
+        ]
+      },
+      "pair_flips_corrected": {
+        "Random|Popularity": [
+          0,
+          10
+        ],
+        "Random|ItemKNN": [
+          2,
+          10
+        ],
+        "Random|EASE": [
+          0,
+          10
+        ],
+        "Random|iALS": [
+          0,
+          10
+        ],
+        "Popularity|ItemKNN": [
+          0,
+          10
+        ],
+        "Popularity|EASE": [
+          0,
+          10
+        ],
+        "Popularity|iALS": [
+          0,
+          10
+        ],
+        "ItemKNN|EASE": [
+          0,
+          10
+        ],
+        "ItemKNN|iALS": [
+          0,
+          10
+        ],
+        "EASE|iALS": [
+          0,
+          10
+        ]
+      }
+    }
+  },
+  "H2b": {
+    "verdict": "CONFIRMED",
+    "evidence": {
+      "err_sampled": 0.09429621006057497,
+      "err_corrected": 0.026246752868891665,
+      "condition_error_reduction": true,
+      "condition_flip_pattern": true,
+      "pair_flips_sampled": {
+        "Random|Popularity": [
+          0,
+          10
+        ],
+        "Random|ItemKNN": [
+          0,
+          10
+        ],
+        "Random|EASE": [
+          10,
+          10
+        ],
+        "Random|iALS": [
+          10,
+          10
+        ],
+        "Popularity|ItemKNN": [
+          0,
+          10
+        ],
+        "Popularity|EASE": [
+          0,
+          10
+        ],
+        "Popularity|iALS": [
+          0,
+          10
+        ],
+        "ItemKNN|EASE": [
+          10,
+          10
+        ],
+        "ItemKNN|iALS": [
+          10,
+          10
+        ],
+        "EASE|iALS": [
+          0,
+          10
+        ]
+      },
+      "pair_flips_corrected": {
+        "Random|Popularity": [
+          0,
+          10
+        ],
+        "Random|ItemKNN": [
+          2,
+          10
+        ],
+        "Random|EASE": [
+          0,
+          10
+        ],
+        "Random|iALS": [
+          0,
+          10
+        ],
+        "Popularity|ItemKNN": [
+          0,
+          10
+        ],
+        "Popularity|EASE": [
+          0,
+          10
+        ],
+        "Popularity|iALS": [
+          0,
+          10
+        ],
+        "ItemKNN|EASE": [
+          0,
+          10
+        ],
+        "ItemKNN|iALS": [
+          0,
+          10
+        ],
+        "EASE|iALS": [
+          0,
+          10
+        ]
+      }
+    }
+  },
+  "H2_replication_arm_t_kuairec": {
+    "exact": {
+      "Random": 0.0014251260639763885,
+      "Popularity": 7.293651551055531e-05,
+      "ItemKNN": 0.0009432650159455682,
+      "EASE": 0.0014432910545596556,
+      "iALS": 0.0025155542454817336
+    },
+    "sampled_mean": {
+      "Random": 0.11662929304231413,
+      "Popularity": 0.02848300750815917,
+      "ItemKNN": 0.2825608663448064,
+      "EASE": 0.11045825876169628,
+      "iALS": 0.1290104161742855
+    },
+    "corrected_mean": {
+      "Random": 0.02508408519450806,
+      "Popularity": 0.0037486291271075995,
+      "ItemKNN": 0.032291847771166025,
+      "EASE": 0.02991131830428531,
+      "iALS": 0.03776739331729502
+    },
+    "mean_abs_err_sampled": 0.1321483337871575,
+    "mean_abs_err_corrected": 0.02448062016377762,
+    "order_sampled": [
+      "ItemKNN",
+      "iALS",
+      "Random",
+      "EASE",
+      "Popularity"
+    ],
+    "order_exact": [
+      "iALS",
+      "EASE",
+      "Random",
+      "ItemKNN",
+      "Popularity"
+    ],
+    "pair_flips_sampled": {
+      "Random|Popularity": [
+        0,
+        10
+      ],
+      "Random|ItemKNN": [
+        10,
+        10
+      ],
+      "Random|EASE": [
+        10,
+        10
+      ],
+      "Random|iALS": [
+        0,
+        10
+      ],
+      "Popularity|ItemKNN": [
+        0,
+        10
+      ],
+      "Popularity|EASE": [
+        0,
+        10
+      ],
+      "Popularity|iALS": [
+        0,
+        10
+      ],
+      "ItemKNN|EASE": [
+        10,
+        10
+      ],
+      "ItemKNN|iALS": [
+        10,
+        10
+      ],
+      "EASE|iALS": [
+        0,
+        10
+      ]
+    },
+    "pair_flips_corrected": {
+      "Random|Popularity": [
+        0,
+        10
+      ],
+      "Random|ItemKNN": [
+        10,
+        10
+      ],
+      "Random|EASE": [
+        0,
+        10
+      ],
+      "Random|iALS": [
+        0,
+        10
+      ],
+      "Popularity|ItemKNN": [
+        0,
+        10
+      ],
+      "Popularity|EASE": [
+        0,
+        10
+      ],
+      "Popularity|iALS": [
+        0,
+        10
+      ],
+      "ItemKNN|EASE": [
+        9,
+        10
+      ],
+      "ItemKNN|iALS": [
+        0,
+        10
+      ],
+      "EASE|iALS": [
+        0,
+        10
+      ]
+    }
+  },
+  "H2_replication_arm_t_ml1m": {
+    "exact": {
+      "Random": 0.012973709895688168,
+      "Popularity": 0.1533671579348501,
+      "ItemKNN": 0.1487992424355437,
+      "EASE": 0.14244861971110645,
+      "iALS": 0.12869256767032608
+    },
+    "sampled_mean": {
+      "Random": 0.25061479311953927,
+      "Popularity": 0.6293853853925951,
+      "ItemKNN": 0.7038471150668817,
+      "EASE": 0.7336829244677957,
+      "iALS": 0.7143341691932241
+    },
+    "corrected_mean": {
+      "Random": 0.056343383325405026,
+      "Popularity": 0.1554412687582381,
+      "ItemKNN": 0.17511700250614576,
+      "EASE": 0.19099463821106488,
+      "iALS": 0.18602023195841572
+    },
+    "mean_abs_err_sampled": 0.4891166179185043,
+    "mean_abs_err_corrected": 0.035527045422351,
+    "order_sampled": [
+      "EASE",
+      "iALS",
+      "ItemKNN",
+      "Popularity",
+      "Random"
+    ],
+    "order_exact": [
+      "Popularity",
+      "ItemKNN",
+      "EASE",
+      "iALS",
+      "Random"
+    ],
+    "pair_flips_sampled": {
+      "Random|Popularity": [
+        0,
+        10
+      ],
+      "Random|ItemKNN": [
+        0,
+        10
+      ],
+      "Random|EASE": [
+        0,
+        10
+      ],
+      "Random|iALS": [
+        0,
+        10
+      ],
+      "Popularity|ItemKNN": [
+        10,
+        10
+      ],
+      "Popularity|EASE": [
+        10,
+        10
+      ],
+      "Popularity|iALS": [
+        10,
+        10
+      ],
+      "ItemKNN|EASE": [
+        10,
+        10
+      ],
+      "ItemKNN|iALS": [
+        10,
+        10
+      ],
+      "EASE|iALS": [
+        0,
+        10
+      ]
+    },
+    "pair_flips_corrected": {
+      "Random|Popularity": [
+        0,
+        10
+      ],
+      "Random|ItemKNN": [
+        0,
+        10
+      ],
+      "Random|EASE": [
+        0,
+        10
+      ],
+      "Random|iALS": [
+        0,
+        10
+      ],
+      "Popularity|ItemKNN": [
+        10,
+        10
+      ],
+      "Popularity|EASE": [
+        10,
+        10
+      ],
+      "Popularity|iALS": [
+        10,
+        10
+      ],
+      "ItemKNN|EASE": [
+        10,
+        10
+      ],
+      "ItemKNN|iALS": [
+        10,
+        10
+      ],
+      "EASE|iALS": [
+        0,
+        10
+      ]
+    }
+  },
+  "H3a": {
+    "verdict": "CONFIRMED",
+    "evidence": {
+      "kuairec_rankers_random_exceeds": 4,
+      "kuairec": {
+        "Popularity": {
+          "random_mean": 0.0012358526405955013,
+          "temporal": 7.293651551055531e-05,
+          "random_exceeds": true
+        },
+        "ItemKNN": {
+          "random_mean": 0.056321128885665796,
+          "temporal": 0.0009432650159455682,
+          "random_exceeds": true
+        },
+        "EASE": {
+          "random_mean": 0.06149245125709034,
+          "temporal": 0.0014432910545596556,
+          "random_exceeds": true
+        },
+        "iALS": {
+          "random_mean": 0.07401666906240573,
+          "temporal": 0.0025155542454817336,
+          "random_exceeds": true
+        }
+      },
+      "ml1m_rankers_random_exceeds": 3,
+      "ml1m": {
+        "Popularity": {
+          "random_mean": 0.09139791615559799,
+          "temporal": 0.1533671579348501,
+          "random_exceeds": false
+        },
+        "ItemKNN": {
+          "random_mean": 0.15055890037587907,
+          "temporal": 0.1487992424355437,
+          "random_exceeds": true
+        },
+        "EASE": {
+          "random_mean": 0.20853246109818988,
+          "temporal": 0.14244861971110645,
+          "random_exceeds": true
+        },
+        "iALS": {
+          "random_mean": 0.18099437591218462,
+          "temporal": 0.12869256767032608,
+          "random_exceeds": true
+        }
+      }
+    }
+  },
+  "H3b": {
+    "verdict": "CONFIRMED",
+    "evidence": {
+      "clean": {
+        "test_pairs": 87887,
+        "pair_overlap": 0,
+        "pair_overlap_ok": true,
+        "max_train_ts": 1598650255.432,
+        "min_test_ts": 1598870572.347,
+        "time_order_ok": true
+      },
+      "planted": {
+        "test_pairs": 87887,
+        "pair_overlap": 2,
+        "pair_overlap_ok": false,
+        "max_train_ts": 1598878253.377,
+        "min_test_ts": 1598870572.347,
+        "time_order_ok": false
+      },
+      "audit_flags_planted": true
+    }
+  },
+  "H4a": {
+    "verdict": "REFUTED",
+    "rule": "substituted rule, DECISIONS.md D6",
+    "evidence": {
+      "ips_vs_naive": {
+        "mean_tau_diff": -0.06000000000000001,
+        "ci_lo": -0.18000000000000002,
+        "ci_hi": 0.06,
+        "n_seeds": 10
+      },
+      "snips_vs_naive": {
+        "mean_tau_diff": -0.040000000000000015,
+        "ci_lo": -0.18,
+        "ci_hi": 0.07999999999999999,
+        "n_seeds": 10
+      }
+    }
+  },
+  "H4b": {
+    "verdict": "REFUTED",
+    "evidence": {
+      "mean_tau_diff": -0.06000000000000002,
+      "ci_lo": -0.2,
+      "ci_hi": 0.06000000000000002,
+      "n_seeds": 10
+    }
+  },
+  "S1": {
+    "verdict": "CONFIRMED",
+    "evidence": {
+      "mean_bias_difference_popularity_minus_ease": 0.033166790117613365,
+      "ci_lo": 0.032647250171618035,
+      "ci_hi": 0.033719309368578636,
+      "n_seeds": 10
+    }
+  },
+  "H5": {
+    "verdict": "CONFIRMED",
+    "evidence": {
+      "head_top1pct": {
+        "truth_order": [
+          "Random",
+          "Popularity",
+          "ItemKNN",
+          "EASE",
+          "iALS"
+        ],
+        "sampled_order": [
+          "Random",
+          "Popularity",
+          "ItemKNN",
+          "EASE",
+          "iALS"
+        ]
+      },
+      "torso_next9pct": {
+        "truth_order": [
+          "ItemKNN",
+          "Random",
+          "Popularity",
+          "EASE",
+          "iALS"
+        ],
+        "sampled_order": [
+          "Popularity",
+          "iALS",
+          "EASE",
+          "ItemKNN",
+          "Random"
+        ]
+      },
+      "tail_rest": {
+        "truth_order": [
+          "iALS",
+          "EASE",
+          "Random",
+          "ItemKNN",
+          "Popularity"
+        ],
+        "sampled_order": [
+          "Random",
+          "ItemKNN",
+          "iALS",
+          "EASE",
+          "Popularity"
+        ]
+      }
+    }
+  },
+  "H6": {
+    "verdict": "CONFIRMED",
+    "evidence": {
+      "top10pct_share": 0.287413182140326,
+      "top1pct_share": 0.2052586817859674,
+      "n_recommendations": 70550,
+      "z": 165.93094595374407,
+      "gini_pooled": 0.7971168267191718
+    }
+  },
+  "H7": {
+    "verdict": "CONFIRMED",
+    "evidence": {
+      "arm_used": "arm_t_kuairec",
+      "n_users": 6535,
+      "gap_cold": 1.0624517511366072e-05,
+      "gap_full": 0.000870328500435013
+    }
+  },
+  "replication_gate": {
+    "verdict": "REPRODUCED",
+    "hypotheses": [
+      "H1a",
+      "H1b",
+      "H3a",
+      "H3b",
+      "H7"
+    ],
+    "detail_file": "results/replication.json"
+  },
+  "track": {
+    "verdict": "GO",
+    "conditions": {
+      "second_dataset_added": true,
+      "causal_estimator_implemented": true,
+      "exact_metric_calibration_and_correction": true,
+      "cold_start_and_popularity_slices_logged": true,
+      "coverage_gate_passed_all_arms": true,
+      "preregistration_pinned": true,
+      "preregistration_commit": "7a12bb647e026062eb613ab01788cf89419f6321"
+    }
+  }
+}

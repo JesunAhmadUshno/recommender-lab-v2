@@ -1,0 +1,107 @@
+[
+  {
+    "hypothesis": "H1a",
+    "v1_verdict": "CONFIRMED",
+    "v2_verdict": "CONFIRMED",
+    "verdict_reproduced": true,
+    "v1_numbers": {
+      "mean_diff": 0.00087,
+      "one_sided_95_lower_bound": 0.000618,
+      "p_holm": 0.0,
+      "n_users": 6638
+    },
+    "v2_numbers": {
+      "mean_diff": 0.000870328500435013,
+      "one_sided_95_lower_bound": 0.0006181796710208776,
+      "p_holm": 0.0,
+      "n_users": 6638
+    },
+    "abs_diff": {
+      "mean_diff": 3.2850043501294213e-07,
+      "one_sided_95_lower_bound": 1.7967102087764267e-07,
+      "p_holm": 0.0,
+      "n_users": 0.0
+    }
+  },
+  {
+    "hypothesis": "H1b",
+    "v1_verdict": "CONFIRMED",
+    "v2_verdict": "CONFIRMED",
+    "verdict_reproduced": true,
+    "v1_numbers": {
+      "mean_diff": 0.0005,
+      "one_sided_95_lower_bound": 0.000139,
+      "p_holm": 0.021,
+      "n_users": 6638
+    },
+    "v2_numbers": {
+      "mean_diff": 0.0005000260386140877,
+      "one_sided_95_lower_bound": 0.00013933760133615756,
+      "p_holm": 0.021,
+      "n_users": 6638
+    },
+    "abs_diff": {
+      "mean_diff": 2.6038614087705962e-08,
+      "one_sided_95_lower_bound": 3.3760133615756563e-07,
+      "p_holm": 0.0,
+      "n_users": 0.0
+    }
+  },
+  {
+    "hypothesis": "H3a",
+    "v1_verdict": "CONFIRMED",
+    "v2_verdict": "CONFIRMED",
+    "verdict_reproduced": true,
+    "v1_numbers": {
+      "kuairec_rankers_random_exceeds": 4,
+      "ml1m_rankers_random_exceeds": 3
+    },
+    "v2_numbers": {
+      "kuairec_rankers_random_exceeds": 4,
+      "ml1m_rankers_random_exceeds": 3
+    },
+    "abs_diff": {
+      "kuairec_rankers_random_exceeds": 0.0,
+      "ml1m_rankers_random_exceeds": 0.0
+    }
+  },
+  {
+    "hypothesis": "H3b",
+    "v1_verdict": "CONFIRMED",
+    "v2_verdict": "CONFIRMED",
+    "verdict_reproduced": true,
+    "v1_numbers": {
+      "clean_pair_overlap": 0,
+      "planted_pair_overlap": 2
+    },
+    "v2_numbers": {
+      "clean_pair_overlap": 0,
+      "planted_pair_overlap": 2
+    },
+    "abs_diff": {
+      "clean_pair_overlap": 0.0,
+      "planted_pair_overlap": 0.0
+    }
+  },
+  {
+    "hypothesis": "H7",
+    "v1_verdict": "CONFIRMED",
+    "v2_verdict": "CONFIRMED",
+    "verdict_reproduced": true,
+    "v1_numbers": {
+      "gap_cold": 1.06e-05,
+      "gap_full": 0.00087,
+      "n_users": 6535
+    },
+    "v2_numbers": {
+      "gap_cold": 1.0624517511366072e-05,
+      "gap_full": 0.000870328500435013,
+      "n_users": 6535
+    },
+    "abs_diff": {
+      "gap_cold": 2.451751136607158e-08,
+      "gap_full": 3.2850043501294213e-07,
+      "n_users": 0.0
+    }
+  }
+]
