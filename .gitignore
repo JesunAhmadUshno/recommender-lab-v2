@@ -1,0 +1,8 @@
+# Raw datasets are never committed (see data/README.md).
+data/raw/
+# Regenerable working state: per-ranker bundles and loader caches.
+results/bundles/
+.venv/
+__pycache__/
+*.egg-info/
+.pytest_cache/

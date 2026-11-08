@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "recommender-lab-v2"
+version = "0.1.0"
+description = "Offline recommender evaluation as the research object, corrected pass: the fully observed arm rebuilt behind a mandatory coverage gate."
+readme = "README.md"
+license = { text = "Apache-2.0" }
+authors = [{ name = "Jesun Ahmad Ushno" }]
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.26"]
+
+[tool.setuptools]
+packages = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
